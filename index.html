@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentCare System Overview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+
+        .browser-mockup {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            background: white;
+            margin-bottom: 2rem;
+        }
+
+        .browser-header {
+            background: #f1f5f9;
+            padding: 8px 12px;
+            display: flex;
+            gap: 6px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .dot.red {
+            background: #ef4444;
+        }
+
+        .dot.yellow {
+            background: #f59e0b;
+        }
+
+        .dot.green {
+            background: #10b981;
+        }
+
+        .mobile-mockup {
+            border: 8px solid #1e293b;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            background: white;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #0d9488, #0284c7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-tooth text-teal-600 text-2xl"></i>
+                    <span class="font-bold text-xl tracking-tight text-slate-800">DentCare</span>
+                </div>
+                <div class="hidden md:flex gap-6 font-medium text-slate-600">
+                    <a href="#patient-experience" class="hover:text-teal-600 transition">Patient Experience</a>
+                    <a href="#admin-dashboard" class="hover:text-teal-600 transition">Admin Dashboard</a>
+                    <a href="#appointments" class="hover:text-teal-600 transition">Appointments & Calendar</a>
+                    <a href="#walkins" class="hover:text-teal-600 transition">Walk-ins</a>
+                    <a href="#billing" class="hover:text-teal-600 transition">Billing & Reports</a>
+                    <a href="#pricing" class="hover:text-teal-600 transition">Pricing</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="bg-slate-900 text-white py-20 text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">The Complete <span class="gradient-text">Dental Clinic</span>
+            Solution</h1>
+        <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10">
+            A comprehensive overview of the DentCare System. From beautiful patient-facing booking pages to powerful
+            administrative tools, explore every feature across both desktop and mobile devices.
+        </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-32">
+
+        <!-- 1. Patient Experience -->
+        <section id="patient-experience">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Seamless Patient Experience</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">First impressions matter. DentCare provides a stunning,
+                    modern landing page and an intuitive online booking system that works perfectly on any device.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <img src="desktop_landing_1779069848282.png" alt="Desktop Landing Page" class="w-full">
+                    </div>
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <img src="desktop_booking_1779069861409.png" alt="Desktop Booking Page" class="w-full">
+                    </div>
+                </div>
+                <div class="space-y-8 flex flex-col items-center">
+                    <div class="mobile-mockup"><img src="mobile_landing_1779070566543.png" alt="Mobile Landing Page"
+                            class="w-full"></div>
+                    <div class="mobile-mockup"><img src="mobile_booking_1779070581947.png" alt="Mobile Booking Page"
+                            class="w-full"></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-slate-200">
+
+        <!-- 2. Admin Dashboard & Login -->
+        <section id="admin-dashboard">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Secure Admin Access & Dashboard</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">A clean, secure portal for your staff. The dashboard
+                    provides a birds-eye view of today's appointments, pending requests, and real-time walk-in queues.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <img src="desktop_admin_login_1779069958126.png" alt="Admin Login" class="w-full">
+                    </div>
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <img src="desktop_admin_dashboard_1779069875490.png" alt="Admin Dashboard" class="w-full">
+                    </div>
+                </div>
+                <div class="space-y-8 flex flex-col items-center">
+                    <div class="mobile-mockup"><img src="mobile_admin_login_1779070633755.png" alt="Mobile Admin Login"
+                            class="w-full"></div>
+                    <div class="mobile-mockup"><img src="mobile_admin_dashboard_1779070278837.png"
+                            alt="Mobile Admin Dashboard" class="w-full"></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-slate-200">
+
+        <!-- 3. Appointments & Calendar -->
+        <section id="appointments">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Interactive Calendar & Appointments</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Manage your schedule efficiently. Approve pending online
+                    requests, view a full monthly calendar, and manage clinic hours to avoid double bookings.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <img src="desktop_admin_appointments_1779070194084.png" alt="Appointments List" class="w-full">
+                    </div>
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <img src="desktop_admin_calendar_1779070060036.png" alt="Calendar View" class="w-full">
+                    </div>
+                </div>
+                <div class="space-y-8 flex flex-col items-center">
+                    <div class="mobile-mockup"><img src="mobile_admin_appointments_1779070293904.png"
+                            alt="Mobile Appointments" class="w-full"></div>
+                    <div class="mobile-mockup"><img src="mobile_admin_calendar_1779070320629.png" alt="Mobile Calendar"
+                            class="w-full"></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-slate-200">
+
+        <!-- 4. Walk-Ins & Patient Records -->
+        <section id="walkins">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Walk-ins & Patient Records</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Easily handle patients walking through the door and maintain
+                    comprehensive electronic medical records, including interactive dental charts.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <img src="desktop_admin_walkins_1779070208366.png" alt="Walk-ins Queue" class="w-full">
+                    </div>
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <img src="desktop_admin_patients_1779070221374.png" alt="Patient Records" class="w-full">
+                    </div>
+                </div>
+                <div class="space-y-8 flex flex-col items-center">
+                    <div class="mobile-mockup"><img src="mobile_admin_walkins_1779070307873.png" alt="Mobile Walk-ins"
+                            class="w-full"></div>
+                    <div class="mobile-mockup"><img src="mobile_admin_patients_1779070335130.png"
+                            alt="Mobile Patient Records" class="w-full"></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-slate-200">
+
+        <!-- 5. Billing & Reports -->
+        <section id="billing">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Billing, Services & Reports</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Manage your clinic's service catalog, generate itemized
+                    bills, track GCash/Cash payments, and export insightful PDF sales reports.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <img src="desktop_admin_billing_items_1779070236197.png" alt="Billing Items Catalog"
+                            class="w-full">
+                    </div>
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <img src="desktop_admin_reports_1779070250037.png" alt="Analytics and Reports" class="w-full">
+                    </div>
+                </div>
+                <div class="space-y-8 flex flex-col items-center">
+                    <div class="mobile-mockup"><img src="mobile_admin_billing_items_1779070348623.png"
+                            alt="Mobile Billing Catalog" class="w-full"></div>
+                    <div class="mobile-mockup"><img src="mobile_admin_reports_1779070264533.png" alt="Mobile Reports"
+                            class="w-full"></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-slate-200">
+
+        <!-- 6. Settings & Customization -->
+        <section id="settings">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Total System Customization</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Tailor the system to fit your brand. The dynamic Theme
+                    Customizer lets you instantly change colors, gradients, and clinic details without writing code.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <img src="desktop_admin_settings_1779070127670.png" alt="Settings General" class="w-full">
+                    </div>
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                        <img src="desktop_admin_theme_1779070160599.png" alt="Theme Customizer" class="w-full">
+                    </div>
+                </div>
+                <div class="space-y-8 flex flex-col items-center">
+                    <div class="mobile-mockup"><img src="mobile_admin_settings_1779070362776.png" alt="Mobile Settings"
+                            class="w-full"></div>
+                    <div class="mobile-mockup"><img src="mobile_admin_theme_1779070552873.png"
+                            alt="Mobile Theme Customizer" class="w-full"></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-slate-200">
+
+        <!-- 7. Pricing & Business Model -->
+        <section id="pricing">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Pricing & Business Model</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">
+                    DentCare uses a straightforward two-part model: a one-time onboarding fee to get your clinic fully
+                    set up, followed by a low flat monthly subscription that keeps everything running, updated, and
+                    supported.
+                </p>
+            </div>
+
+            <!-- How it works row -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <div class="flex gap-4 items-start p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center">
+                        <i class="fa-solid fa-rocket text-teal-600"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 mb-1">One-time Setup</h4>
+                        <p class="text-sm text-slate-500 leading-6">Covers deployment, data loading, branding, and a
+                            staff training session so your team hits the ground running.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center">
+                        <i class="fa-solid fa-rotate text-teal-600"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 mb-1">Monthly SaaS Access</h4>
+                        <p class="text-sm text-slate-500 leading-6">A flat monthly fee covering hosting, backups, SSL,
+                            and continuous feature updates — no surprises on your bill.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center">
+                        <i class="fa-solid fa-puzzle-piece text-teal-600"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-slate-800 mb-1">No Long-term Lock-in</h4>
+                        <p class="text-sm text-slate-500 leading-6">Start at introductory rates with full flexibility.
+                            Optional add-ons can be introduced as your practice grows.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
+
+                <!-- Setup & Onboarding -->
+                <div
+                    class="bg-white rounded-2xl border border-slate-200 p-8 md:p-10 shadow-sm flex flex-col transition-all duration-300 hover:shadow-md hover:border-slate-300">
+                    <div class="mb-6">
+                        <span
+                            class="bg-slate-100 text-slate-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                            Step 1 · One-time
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Setup & Onboarding</h3>
+                    <p class="text-sm text-slate-500 mb-6">One-time fee to get your clinic fully digitalized,
+                        configured, and running smoothly.</p>
+
+                    <div class="flex items-baseline gap-2 mb-2">
+                        <span class="text-4xl font-extrabold text-slate-900">₱5,000</span>
+                        <span class="text-slate-500 text-sm font-medium">one-time</span>
+                    </div>
+                    <div
+                        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-amber-50 text-amber-700 text-xs font-semibold mb-8 border border-amber-200/50 w-fit">
+                        <i class="fa-solid fa-tags text-[10px]"></i> Introductory Price Offer
+                    </div>
+
+                    <div class="border-t border-slate-100 pt-6 flex-1">
+                        <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider mb-4">What's included</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 text-sm text-slate-600">
+                                <div
+                                    class="flex-shrink-0 w-5 h-5 rounded-full bg-teal-50 flex items-center justify-center mt-0.5">
+                                    <i class="fa-solid fa-check text-teal-600 text-xs"></i>
+                                </div>
+                                <span>Initial system deployment & dedicated secure server provisioning.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600">
+                                <div
+                                    class="flex-shrink-0 w-5 h-5 rounded-full bg-teal-50 flex items-center justify-center mt-0.5">
+                                    <i class="fa-solid fa-check text-teal-600 text-xs"></i>
+                                </div>
+                                <span>Pre-loading your clinic's existing service catalog & billing catalog.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600">
+                                <div
+                                    class="flex-shrink-0 w-5 h-5 rounded-full bg-teal-50 flex items-center justify-center mt-0.5">
+                                    <i class="fa-solid fa-check text-teal-600 text-xs"></i>
+                                </div>
+                                <span>Brand personalization including customized colors, clinic logos, and
+                                    signatures.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600">
+                                <div
+                                    class="flex-shrink-0 w-5 h-5 rounded-full bg-teal-50 flex items-center justify-center mt-0.5">
+                                    <i class="fa-solid fa-check text-teal-600 text-xs"></i>
+                                </div>
+                                <span>1-hour hands-on staff training session via Zoom or in-person.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Monthly SaaS -->
+                <div
+                    class="bg-gradient-to-b from-teal-950 to-slate-900 text-white rounded-2xl border border-teal-800 p-8 md:p-10 shadow-md flex flex-col transition-all duration-300 hover:shadow-lg relative">
+                    <div
+                        class="absolute -top-4 right-8 bg-teal-400 text-slate-950 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">
+                        Recurring
+                    </div>
+                    <div class="mb-6">
+                        <span
+                            class="bg-teal-900/50 text-teal-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-teal-800/30">
+                            Step 2 · Monthly
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Monthly SaaS Access</h3>
+                    <p class="text-sm text-teal-200/70 mb-6">Full all-inclusive access to core systems, dental charts,
+                        billing, and system updates.</p>
+
+                    <div class="flex items-baseline gap-2 mb-2">
+                        <span class="text-4xl font-extrabold text-white">₱1,000</span>
+                        <span class="text-teal-300 text-sm font-medium">/ month</span>
+                    </div>
+                    <div
+                        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-teal-800/50 text-teal-300 text-xs font-semibold mb-8 border border-teal-700/50 w-fit">
+                        <i class="fa-solid fa-tags text-[10px]"></i> Introductory Price Offer
+                    </div>
+
+                    <div class="border-t border-teal-800/60 pt-6 flex-1">
+                        <h4 class="text-teal-400 font-bold text-xs uppercase tracking-wider mb-4">What's included</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 text-sm text-teal-100">
+                                <div
+                                    class="flex-shrink-0 w-5 h-5 rounded-full bg-teal-900/80 flex items-center justify-center mt-0.5">
+                                    <i class="fa-solid fa-check text-teal-400 text-xs"></i>
+                                </div>
+                                <span>Full core access to Appointments, Walk-in Queue, & Billing engines.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-teal-100">
+                                <div
+                                    class="flex-shrink-0 w-5 h-5 rounded-full bg-teal-900/80 flex items-center justify-center mt-0.5">
+                                    <i class="fa-solid fa-check text-teal-400 text-xs"></i>
+                                </div>
+                                <span><strong>Interactive Graphical Dental Charts</strong> to track full treatment
+                                    histories visually.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-teal-100">
+                                <div
+                                    class="flex-shrink-0 w-5 h-5 rounded-full bg-teal-900/80 flex items-center justify-center mt-0.5">
+                                    <i class="fa-solid fa-check text-teal-400 text-xs"></i>
+                                </div>
+                                <span><strong>Real-Time Automated Email Alerts</strong> for bookings, approvals, and
+                                    reminders.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-teal-100">
+                                <div
+                                    class="flex-shrink-0 w-5 h-5 rounded-full bg-teal-900/80 flex items-center justify-center mt-0.5">
+                                    <i class="fa-solid fa-check text-teal-400 text-xs"></i>
+                                </div>
+                                <span>Full premium web hosting, dedicated database storage, and SSL Security.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Total cost callout
+            <p class="text-center text-sm text-slate-500 mt-8">
+                Total to get started: <span class="font-semibold text-slate-700">₱5,000 one-time</span> + <span
+                    class="font-semibold text-slate-700">₱1,000/month</span> — everything included, no hidden fees.
+            </p>
+            </div> -->
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center">
+        <div class="flex items-center justify-center gap-2 mb-4">
+            <i class="fa-solid fa-tooth text-teal-500 text-2xl"></i>
+            <span class="font-bold text-xl text-white">DentCare</span>
+        </div>
+        <p>&copy; 2026 DentCare Clinic System. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
